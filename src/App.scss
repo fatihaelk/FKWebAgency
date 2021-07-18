@@ -1,0 +1,52 @@
+.App {
+    display: grid;
+    grid-template-columns: var(--width-nav) auto;
+    overflow-x: hidden;
+}
+
+main {
+    grid-column: 2/-1;
+    transition: all .7s ease-in-out;
+
+    /*===== Toggle Menu =====*/
+    .nav__toggle{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        background: var(--nav-section-color);
+        opacity: .7;
+        z-index: 999;
+    }
+    .nav__toggle,
+    .show-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.8rem;
+        transition: all .7s ease-in-out;
+        color: var(--nav-color);
+
+        .bx {
+            font-size: 1.8rem;
+        }
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+}
+
+
+/*===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 1100px) {
+    .App {
+        grid-template-columns: 100vw;
+    }
+
+    main {
+        grid-column: 1/-1;
+    }
+}

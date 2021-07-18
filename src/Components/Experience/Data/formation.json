@@ -1,0 +1,24 @@
+[
+    {
+        "date": "septembre 2021 - janvier 2021",
+        "title": "Développeur web et web mobile",
+        "description": "Acquisition des bases dans les technologie suivante: HTML/CSS, JavaScript, Symfony, PHP, Poo, ionic/Angular"
+
+    },
+    {
+        "date": "Janvier 2021 - Mai 2021",
+        "title": "Développeur web Fullstack JavaScript",
+        "description": "Apprentissage de nodeJs, express, Ejs et REACT"
+
+    },{
+        "date": "2009 - 2012",
+        "title": "Licence d'économie et de gestion",
+        "description": " Université Nanterre Paris X"
+
+    },{
+        "date": "2007 - 2009",
+        "title": "Baccalauréat comptablité",
+        "description": "Obtention du baccalauréat compatablité"
+
+    }
+]

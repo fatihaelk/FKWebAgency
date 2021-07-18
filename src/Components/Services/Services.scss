@@ -1,0 +1,64 @@
+.service{
+    &__offers{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        display: grid;
+        gap: .7rem;
+        padding: 1rem 2rem 2rem;
+        border-radius: 20px;
+        text-align: center;
+        color: var(--text-section-color);
+        transition: all .5s ease-in-out;
+        cursor: default;
+            &:hover{
+                transform: translateY(-20px);
+                opacity: .7;
+            }
+            &__top{
+                display: grid;
+                justify-content: center;
+            }
+            &__img{
+                width: 150px;
+                margin: auto;
+            }
+            &__text {
+                font-size: .9rem;
+                font-weight: lighter;
+            }
+        }
+        &__contact{
+            margin-top: 3rem;
+            text-align: center;
+            color: var(--text-section-color);
+            a{
+                color: var(--btn-color);
+                transition: color .4s;
+                &:hover{
+                    color: var(--text-section-color);
+                }
+            }
+        }
+}
+
+.design{
+    background: rgb(209, 119, 119);
+    box-shadow: rgb(209 119 119 / 50%) 0px 5px 20px 0px;
+    .card__img{
+        width: 200px;
+    }
+}
+.dev{
+    background: teal;
+    box-shadow: rgb(1 121 121 / 50%) 0px 5px 20px 0px;
+
+}
+.wordpress{
+    background: rgb(250, 173, 72);
+    box-shadow: rgb(230 154 54 / 50%) 0px 5px 20px 0px;
+
+}

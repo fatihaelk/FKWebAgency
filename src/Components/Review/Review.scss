@@ -1,0 +1,76 @@
+.review {
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        color: var(--text-section-color);
+    }
+
+    &__card {
+        width: 100%;
+        padding: 1.5rem 2rem;
+        grid-column: 1/-1;
+    }
+
+    &__img {
+        width: 150px!important;
+        border-radius: 50%;
+    }
+    .carousel .thumb, .carousel .thumb:hover{
+        width: 11vw!important;
+        height: 15vh!important;
+
+    }
+
+    &__description {
+        position: relative !important;
+        padding: 2rem 1rem!important;
+        margin-top: 1.5rem!important;
+        background: var(--contain-section-color)!important;
+        color: var(--text-section-color)!important;
+        border-radius: 20px!important;
+        box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%)!important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid var(--contain-section-color);
+            border-left: 15px solid transparent;
+            top: -12px;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        &--item {
+            width: 15px;
+            height: 5px;
+            background: var(--badge-color);
+            border-radius: 70px;
+            cursor: pointer;
+        }
+        .active{
+            width: 22px;
+            background: red;
+            transform: scale(1.2);
+            transition: all .3s ease-in;
+        }
+    }
+
+}
+.card-active{
+    transform: translateX(0);
+    display: block;
+}
+.card-1, .card-2, .card-3{
+    display: none;
+}
+

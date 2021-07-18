@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap');
+
+/*===== Variable CSS =====*/
+:root {
+    --width-nav: 15.75rem;
+    /*===== Colors =====*/
+    --icon-color: #ffd15c;
+    --navActive-color: #ffd15c;
+    --nav-color: #fff;
+    /*===== home page color =====*/
+    --text-color: #fff;
+    --title-color: #fff;
+    --body-color: #353353;
+    --contain-color: #25234d;
+    /*===== section color =====*/
+    --nav-section-color: #353353;
+    --text-section-color: #353353;
+    --title-section-color: #5e5c7f;
+    --body-section-color: #f9f9ff;
+    --contain-section-color: #fff;
+    --badge-color: #c4c4f5;
+
+
+    --bg-contact: #ffd15cce;
+    --btn-contact: white;
+    --btn-color: #ff4c60;
+    --footer-color: #9c9abb;
+    /*===== paralax =====*/
+    --yellow: #ffc107;
+    --red: #dc3545;
+    --teal: #20c997;
+    --indigo: #6610f2;
+    --pink: #e83e8c;
+    --cyan: #17a2b8;
+}
+
+/*===== Global =====*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--body-color);
+    transition: all 1.5s;
+}
+
+/*===== Variable Dark Mode =====*/
+body.dark-theme {
+    --icon-color: #ff4c60;
+    --navActive-color: #ff4c60;
+    --nav-color: #353353;
+    --text-color: #353353;
+    --title-color: #5e5c7f;
+    --body-color: #f9f9ff;
+    --contain-color: #fff;
+    /*===== Section color =====*/
+    --nav-section-color: #fff;
+    --text-section-color: #fff;
+    --title-section-color: #fff;
+    --body-section-color: #353353;
+    --contain-section-color: #25234d;
+    --bg-contact: #25234d;
+    --btn-contact:#ff4c60;
+    transition: all 1.5s;
+}
+
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+.section {
+    padding: 4rem 2rem;
+    background: var(--body-section-color);
+
+    &__title {
+        color: var(--title-section-color);
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+/*===== Main =====*/
