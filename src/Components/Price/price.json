@@ -1,8 +1,8 @@
 [{
     "icon": "../../../assets/wordpress.svg",
     "title": "Wordpress",
-    "description": "Conception d'un site internet avec Wordpress. </br> 1/ Site Vitrine </br> 2/ Site marchand </br> 3/ Site catalogue </br> 4/ Site évènementiel",
-    "price": "A partir de 450€"
+    "description": "Conception d'un site internet avec Wordpress. Différent type de site possible: Site Vitrine, Site marchand, Site catalogue ou Site évènementiel",
+    "price": "A partir de 500€"
 },
 {
     "icon": "../../../assets/dev.svg",

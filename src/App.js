@@ -12,6 +12,9 @@ import Services from './Components/Services/Services';
 import Project from './Components/Project/Project';
 import Price from './Components/Price/Price';
 import Contact from './Components/Contact/Contact';
+import {Helmet} from "react-helmet";
+import Favicon from './fk4.ico'
+
 
 
 function App() {
@@ -37,6 +40,16 @@ function App() {
 
   return (
     <div className="App">
+         <Helmet>
+                <meta charSet="utf-8" />
+                <title>FK Web agency</title>
+                <meta name="description" content="Site Fk Web Agency, agence de développement web" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="shortcut inoc" href={Favicon} />
+
+
+                <link rel="canonical" href="http://fkwebagency.com" />
+            </Helmet>
       <Router>
 
       <Nav width={width} toggle={toggle} setToggle={setToggle} displayMenu={displayMenu} />
