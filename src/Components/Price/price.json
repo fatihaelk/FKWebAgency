@@ -7,7 +7,7 @@
 {
     "icon": "../../../assets/dev.svg",
     "title": "Developpement",
-    "description": "Conception d'un site internet sur mesure, laisser exprimer vos idées, nous, nous occupons du reste",
+    "description": "Conception d'un site internet sur mesure, faites nous part de vos idées, nous, nous occupons du reste",
     "price": " A partir de 900€"
 },
 {
@@ -19,7 +19,7 @@
 {
     "icon": "../../assets/settings.svg",
     "title": "Maintenance",
-    "description": "N'hésiter à nous faire parvenir, nos etudierons votre demande et vous ferons un devis.",
+    "description": "N'hésitez à nous contacter, nos étudierons votre demande et vous ferons un devis dans les plus bref délais.",
     "price": "Sur devis"
 }
 ]

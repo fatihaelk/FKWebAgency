@@ -27,7 +27,7 @@
     }
 
     &__left {
-        width: 50%;
+        width: 100%;
  
         gap: 1rem;
         align-items: center;
@@ -35,6 +35,9 @@
 
     &__text {
         line-height: 1.7;
+        strong{
+            cursor: pointer;
+        }
     }
 
     &__btn {

@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { CountUp } from 'use-count-up'
-import Progress from '../Progress/Progress'
 import './About.scss'
-import CvFatiha from './CvFatiha.pdf'
+import { Link } from 'react-scroll';
+
 
 const About = () => {
 
@@ -20,7 +20,7 @@ const About = () => {
 
             <div className="about__content">
                 <div className="about__left">
-                    <p className="about__text">Nous créons des sites web internet, vitrine ou Ecommerce. Nous répondons à tous les projets web. Vous êtes entre de bonne main, la réactivité et les compétences de nos équipes nous permettent de vous accompagner du début à la fin de votre projet.</p>
+                    <p className="about__text">Agence jeune et novatrice dans le domaine du développement web, nous répondons à toutes vos demandes de projets. Avec FK Web Agency vous êtes entre de bonne main, nos équipes s'occupe de maquéter votre projet, afin de le rendre plus concret. Nous nous occupons également de votre identité visuelle grâce à notre designer qui concevra vos logos et flyers, mais aussi notre community manager qui chouchoutera vos réseaux sociaux et ainsi participera au développement de votré société. La réactivité et les compétences de nos équipes nous permettent de vous accompagner du début à la fin de votre projet. <strong><Link to='contact'> N'hésitez pas à nous contacter</Link> </strong>pour de plus amples informations ou afin d'obtenir votre devis personnalisé.</p>
                 </div> 
             </div> 
          

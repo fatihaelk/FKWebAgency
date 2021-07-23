@@ -1,14 +1,22 @@
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 import './Contact.scss';
+import DOMPurify from 'dompurify';
+ 
 
 const Contact = () => {
+
+  const handlerInput = e => {
+    document.getElementById(e.target.id).value = DOMPurify.sanitize(e.target.value)
+  }
+
+
     function sendEmail(e){
         e.preventDefault();
         Swal.fire({
             icon: 'success',
             title: 'Message envoyé',
-            text: "Merci de m'avoir contacter, je reviens vers vous dans les plus bref délai!",
+            text: "Merci de nous avoir contacté, nous reviendrons vers vous dans les plus bref délai!",
             showConfirmButton: false,
             timer: 3500,
           });
@@ -26,7 +34,7 @@ const Contact = () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: "Une erreur c'est produite merci de me contacter par mail email@gmail.com",
+                text: "Une erreur c'est produite merci de nous contacter par mail contact@fkwebagency.com",
                 showConfirmButton: true,
               });
         })
@@ -38,10 +46,11 @@ const Contact = () => {
     <form onSubmit={sendEmail} className="contact__form">
       <div>
         <label className="contact__label">Nom et Prénom</label>
-        <input
+        <input onChange={handlerInput}
           className="contact__input"
           placeholder="Entrez votre Nom"
           name="name"
+          id="name"
           type="text"
           required
         />
@@ -49,30 +58,33 @@ const Contact = () => {
 
       <div>
         <label className="contact__label">Email</label>
-        <input
+        <input onChange={handlerInput}
           className="contact__input"
           placeholder="Entrez votre mail"
           type="email"
           name="email"
+          id="email"
           required
         />
       </div>
       <div>
         <label className="contact__label">Objet</label>
-        <input
+        <input onChange={handlerInput}
           className="contact__input"
           placeholder="Quel est votre objet"
           type="text"
           name="subject"
+          id="subject"
           required
         />
       </div>
       <div>
         <label className="contact__label">Message</label>
-        <textarea
+        <textarea onChange={handlerInput}
           className="contact__input"
           placeholder="Merci de saisir votre message"
           name="message"
+          id="message"
           required
         />
       </div>
