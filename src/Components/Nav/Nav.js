@@ -51,6 +51,9 @@ const Nav = ({toggle, displayMenu }) => {
             <li  className="nav__item">
             <i className='bx bx-support'></i> <Link onClick={displayMenu}  to='contact'>Contact</Link> 
             </li>
+            <li  className="nav__item">
+            <i class="bx bx-calculator"></i> <Link onClick={displayMenu}  to='mentions'>Mentions Legales</Link> 
+            </li>
           </ul>
         </nav>
         <span className="footer">©2021 Agence de développement web. </span>

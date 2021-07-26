@@ -12,6 +12,7 @@ import Services from './Components/Services/Services';
 import Project from './Components/Project/Project';
 import Price from './Components/Price/Price';
 import Contact from './Components/Contact/Contact';
+import Mentions from './Components/MentionLegales/Mentions';
 import {Helmet} from "react-helmet";
 import Favicon from './fk4.ico'
 
@@ -66,8 +67,9 @@ function App() {
             <Project/>
             <Price/>
             <Review />
-            
+          
             <Contact/>
+            <Mentions/>
             
       </main>
         </Router>

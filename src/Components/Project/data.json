@@ -19,9 +19,9 @@
     "technologie": "react, nodejs"
 }
 ,{"id": 4,
-    "title": "Social Media Travel",
+    "title": "Social Media Travel, en cours de création",
     "image": "../assets/travel.png",
-    "url": "https://www.npmjs.com/package/reactjs-popup",
+    "url": "",
     "description": "Développement d'un site qui permet de publier ses aventures, et de ainsi intragir avec les membres de ce site afin de se conseiller mutuellement les bon plans.",
     "technologie": "react, nodejs, express, mongoDB"
 }
