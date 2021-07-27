@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data from './data.json';
-import 'react-responsive-modal/styles.css';
+
 import { Modal } from 'react-responsive-modal';
 
 import './Project.scss';

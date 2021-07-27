@@ -15,13 +15,13 @@ import Contact from './Components/Contact/Contact';
 import Mentions from './Components/MentionLegales/Mentions';
 import {Helmet} from "react-helmet";
 import Favicon from './fk4.ico'
-
+import 'react-responsive-modal/styles.css';
 
 
 function App() {
   const [toggle, setToggle] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-
+  const [open, setOpen] = useState(false);
   useEffect(() => {
     const changeWidth = () => setWidth(window.innerWidth);
 
@@ -44,7 +44,7 @@ function App() {
          <Helmet>
                 <meta charSet="utf-8" />
                 <title>FK Web agency</title>
-                <meta name="description" content="Site Fk Web Agency, agence de développement web" />
+      <meta name="description" content="Site Fk Web Agency, agence de développement web, fkwebagency, conception de site internet," />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="shortcut inoc" href={Favicon} />
 
@@ -53,7 +53,7 @@ function App() {
             </Helmet>
       <Router>
 
-      <Nav width={width} toggle={toggle} setToggle={setToggle} displayMenu={displayMenu} />
+      <Nav width={width} toggle={toggle} setToggle={setToggle} displayMenu={displayMenu} open={open} setOpen={setOpen} />
       <main className={toggle ? 'show-menu' : undefined}>
         {width < 1100 && (
           <div className= 'nav__toggle'>
@@ -61,7 +61,7 @@ function App() {
           </div>
         )}
         
-            <Home exact path="/" component={Home} />
+            <Home exact path="/" component={Home} open={open} />
             <About/>
             <Services/>
             <Project/>
@@ -69,7 +69,7 @@ function App() {
             <Review />
           
             <Contact/>
-            <Mentions/>
+   
             
       </main>
         </Router>

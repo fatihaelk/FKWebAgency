@@ -5,7 +5,7 @@ import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-scroll';
 
 
-const Home = () => {
+const Home = ({open}) => {
 
   const calc = (x, y) => [
     x - window.innerWidth / 2,
@@ -42,21 +42,24 @@ const Home = () => {
                 
             </div>
             <div className="home__content">
-                <img className="home__img" src={process.env.PUBLIC_URL + 'assets/fk4.png'}
-  alt="Avatar de profil" />
+              {open ? undefined :
+              <img className="home__img" src={process.env.PUBLIC_URL + 'assets/fk4.png'}
+alt="Avatar de profil" />
+              
+            }
                 {/* <h1 className="home__name"> Fatiha Elkarrouti</h1> */}
 
 
-        {/* <div className="home__animation">
-                    Je suis
+        <div className="home__animation">
+                    
           <Typewriter
             options={{
-              strings: ['développeuse web', 'Designer'],
+              strings: ['Agence de développement Web', 'Conception de site internet.', 'Design de vos logos et/ou flyers'],
               autoStart: true,
               loop: true,
             }}
           />
-        </div> */}
+        </div>
                 {/* <div className="home__icon">
                 <i className='bx bxl-linkedin-square'></i>
                 <i className='bx bxl-facebook-square' ></i>

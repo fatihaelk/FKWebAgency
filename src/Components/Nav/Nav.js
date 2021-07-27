@@ -1,9 +1,10 @@
 import React, { useState, useEffect} from 'react';
 import { Link } from 'react-scroll';
-
+import { Modal } from 'react-responsive-modal';
 import './Nav.scss';
+import Mentions from '../MentionLegales/Mentions'
 
-const Nav = ({toggle, displayMenu }) => {
+const Nav = ({toggle, displayMenu, open,  setOpen}) => {
 
     
     const [changeTheme, setChangeTheme] = useState(false);
@@ -15,7 +16,8 @@ const Nav = ({toggle, displayMenu }) => {
 
     const change = () => setChangeTheme(!changeTheme);
 
-    
+    const onModal = () => setOpen(!open);
+
     
 
   return (
@@ -51,13 +53,18 @@ const Nav = ({toggle, displayMenu }) => {
             <li  className="nav__item">
             <i className='bx bx-support'></i> <Link onClick={displayMenu}  to='contact'>Contact</Link> 
             </li>
-            <li  className="nav__item">
-            <i class="bx bx-calculator"></i> <Link onClick={displayMenu}  to='mentions'>Mentions Legales</Link> 
-            </li>
+           
           </ul>
         </nav>
-        <span className="footer">©2021 Agence de développement web. </span>
+        <div style={{alignSelf: 'flex-end'}}>
+          <span className="footer">©2021 Agence de développement web. </span>
+        <span onClick={onModal} className="footer__mention">Mentions légales </span>
+        </div>
+        
       </header>
+      <Modal open={open} onClose={onModal} center>
+        <Mentions/>
+      </Modal>
     </>
   );
 };

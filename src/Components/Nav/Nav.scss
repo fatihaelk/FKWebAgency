@@ -64,6 +64,11 @@ header {
         align-self: end;
         font-size: .8rem;
         color: var(--footer-color);
+        &__mention{
+            cursor: pointer;
+            font-size: .9rem;
+            color: var(--footer-color);
+        }
     }
 
 }
