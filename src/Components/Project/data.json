@@ -1,36 +1,43 @@
-[{"id": 1,
+[
+  {
+    "id": 1,
     "title": "Inayah",
-    "image": "../assets/inayah.png",
+    "image": "../assets/logo.jpeg",
     "url": "https://www.association-inayah.com",
     "description": "Conception d'un site internet pour une associaiton humanitaire, afin qu'elle puisse y afficher ses campagnes, et permettre au donateur de pouvoir effectuer un dons en ligne, se proposer pour être bénévole  au sein de l'assocation, mais aussi permettre au personnes qui sont dans le besoin de pouver compléter un formulaire afin de faire une demande d'aide.",
     "technologie": "Symfony"
-},{"id": 5,
+  },
+  {
+    "id": 5,
     "title": "Chrono pieces auto-moto",
-    "image": "../assets/chrono.png",
+    "image": "../assets/chrono.jpg",
     "url": "https://www.chronopiecesauto.fr/",
     "description": "Création d'un site vitre pour une enseigne de vente de pièce détaché automobile. Le client nous a laisser carte blanche quand au design et disposition du site. Nous avons garder uniquement la couleur principal du magafin qui est le jaune, nous avons en plus de cela re-designé son logo.",
     "technologie": "react, sass"
-},
-{"id": 3,
-    "title": "ecommerce fictif",
-    "image": "../assets/chrismast.png",
-    "url": "https://www.npmjs.com/package/reactjs-popup",
-    "description": "explication du projet",
-    "technologie": "react, nodejs"
-}
-,{"id": 4,
-    "title": "Social Media Travel, en cours de création",
-    "image": "../assets/travel.png",
+  },
+
+  {
+    "id": 4,
+    "title": "Walanya",
+    "image": "../assets/walanya.png",
     "url": "",
-    "description": "Développement d'un site qui permet de publier ses aventures, et de ainsi intragir avec les membres de ce site afin de se conseiller mutuellement les bon plans.",
-    "technologie": "react, nodejs, express, mongoDB"
-}
-, {
-    "id": 6,
-    "title": "Melo vie saine",
-    "image": "../assets/melodielogo.jpeg",
-    "url": "https://meloviesaine.com/",
-    "description": "Création d'un site de présentation de recette de cuisine, pour une conseillère de vente. Carte blanche quand au design et la présentation du site",
+    "description": "Site ecommerce, pour un client qui fait de la décoration artisanale haut de gamme.",
     "technologie": "Wordpress"
-}
+  },
+  {
+    "id": 6,
+    "title": "Mondial Food",
+    "image": "../assets/mondial.jpg",
+    "url": "https://www.mondialfood.fr/",
+    "description": "Création d'un site vitrine pour un grossiste alimentaire.",
+    "technologie": "NextJS"
+  },
+  {
+    "id": 7,
+    "title": "Clic Commerçants",
+    "image": "../assets/CLICCOMMERCANT.png",
+    "url": "https://play.google.com/store/apps/details?id=com.fkwebagency.clic_commercants",
+    "description": "Application mobile compatible Ios et Android.",
+    "technologie": "React Native"
+  }
 ]
