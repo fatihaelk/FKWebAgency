@@ -10,7 +10,7 @@
   {
     "id": 5,
     "title": "Chrono pieces auto-moto",
-    "image": "../assets/chrono.jpg",
+    "image": "../assets/Chrono.jpg",
     "url": "https://www.chronopiecesauto.fr/",
     "description": "Création d'un site vitre pour une enseigne de vente de pièce détaché automobile. Le client nous a laisser carte blanche quand au design et disposition du site. Nous avons garder uniquement la couleur principal du magafin qui est le jaune, nous avons en plus de cela re-designé son logo.",
     "technologie": "react, sass"
